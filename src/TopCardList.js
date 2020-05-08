@@ -5,19 +5,23 @@ const cardListData = [
   {username: '/Chrystian',
    followers: 1483,
    todayFollower: 12,
-   solcialIcon: '/images/icon-facebook.svg'},
+   solcialIcon: '/images/icon-facebook.svg',
+   color:'facebook'},
   {username: '@mudo_',
    followers: '28k',
    todayFollower: 40,
-   solcialIcon: '/images/icon-twitter.svg'},
+   solcialIcon: '/images/icon-twitter.svg',
+   color:'twitter'},
   {username: 'mudo_',
    followers: '6k',
    todayFollower: 20,
-   solcialIcon: '/images/icon-instagram.svg'},
+   solcialIcon: '/images/icon-instagram.svg',
+   color:'instagram'},
   {username: '/ChrystianLozano',
    followers: '12k',
    todayFollower: 29,
-   solcialIcon: '/images/icon-youtube.svg'},
+   solcialIcon: '/images/icon-youtube.svg',
+   color:'youtube'},
 ]
 
 const TopCardList = () => {
@@ -27,8 +31,8 @@ const TopCardList = () => {
       <div className="wrapper">
         <div className="grid">
           {
-            cardListData.map(({username, followers, todayFollower, solcialIcon}) => (
-              <Card key={username} username={username} followers={followers} todayFollower={todayFollower} solcialIcon={solcialIcon}/>
+            cardListData.map(({username, followers, todayFollower, solcialIcon, color}) => (
+              <Card key={username} username={username} followers={followers} todayFollower={todayFollower} solcialIcon={solcialIcon} color={color}/>
             ))
           }
 

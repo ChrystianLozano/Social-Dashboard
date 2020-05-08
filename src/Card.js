@@ -1,9 +1,9 @@
 import React from 'react';
 import './card.css'
-const Card = ({username, followers, todayFollower, solcialIcon}) => {
-
+const Card = ({username, followers, todayFollower, solcialIcon, color}) => {
+    const social = `card ${color}`
     return (
-        <article className="card facebook">
+        <article className={social}>
         <p className="card-title">
           <img src={solcialIcon} alt="" />
           {username}
